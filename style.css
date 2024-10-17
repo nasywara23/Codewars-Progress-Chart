@@ -1,0 +1,263 @@
+/* Global Styles */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px;
+    padding: 40px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Image */
+.header-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Table Styles */
+.table-container {
+    margin: 40px 0 0;
+    overflow-x: auto;
+    width: 80%;
+    height: 20vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+th {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 0 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+
+td[contenteditable="true"] {
+    background-color: #eef;
+    cursor: text;
+}
+
+#addRowForm {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+#addRowForm label {
+    display: none;
+}
+
+#newDate,
+#newScore {
+    display: flex;
+    outline: none;
+    border: 1px solid #d3d3d3;
+    width: 150px;
+    padding: 8px 8px;
+    border-radius: 24px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+#newScore {
+    margin: 0 10px;
+    width: 40px;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 40px;
+    width: 80%;
+    height: 40vh;
+}
+
+
+/* Button */
+button {
+    background-color: #4baec0;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 12px;
+}
+
+#addRowForm button:hover {
+    background-color: #4b87c0;
+}
+
+#update-chart {
+    display: none;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #a3a3a3;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.delete-btn:hover {
+    color: red;
+}
+
+.delete-btn i {
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 477px) {
+
+    .container {
+        margin: 0;
+        padding: 40px 0;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    
+    /* Header Image */
+    .header-image {
+        width: 80%;
+        border-radius: 0;
+    }
+    
+    /* Table Styles */
+    .table-container {
+        margin: 40px 0 0;
+        overflow-x: auto;
+        width: 90%;
+        height: 20vh;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    th {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    td {
+        padding: 0 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    td[contenteditable="true"] {
+        background-color: #eef;
+        cursor: text;
+    }
+    
+    #addRowForm {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #addRowForm label {
+        display: none;
+    }
+    
+    #newDate,
+    #newScore {
+        display: flex;
+        outline: none;
+        border: 1px solid #d3d3d3;
+        padding: 10px 8px;
+        border-radius: 24px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: #a3a3a3;
+    }
+    
+    #newScore {
+        margin: 0 10px;
+        width: 40px;
+    }
+    
+    /* Chart Container */
+    .chart-container {
+        margin-top: 30px;
+        width: 85%;
+        height: 40vh;
+    
+    }
+    
+    
+    /* Button */
+    button {
+        background-color: #4baec0;
+        color: white;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 24px;
+        cursor: pointer;
+        font-family: "Poppins";
+    }
+    
+    #addRowForm button:hover {
+        background-color: #4b87c0;
+    }
+    
+    #update-chart {
+        display: none;
+    }
+    
+    .delete-btn {
+        background: none;
+        border: none;
+        color: #a3a3a3;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .delete-btn:hover {
+        color: red;
+    }
+    
+    .delete-btn i {
+        margin: 0;
+    }
+    
+}
